@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 4, 7, 2, 8, 12];
+    index = 1;
+    for (let i = index; i < arr.length - 1; i++) {
+        arr[i] = arr[i + 1];
+
+    }arr[arr.length - 1] = null
+    document.write(arr)
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     document.write(arr[i] + '<br>')
+    // }
+    // document.write("<hr>");
+    //
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] % 3 === 0) {
+    //         document.write("Phần tử chia hết cho 3 là: " + arr[i] + '<br>')
+    //     }
+    // }
+    // document.write("<hr>");
+    // let sum = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] % 4 === 0) {
+    //         document.write("Phần tử chia hết cho 4 là: " + arr[i] + '<br>')
+    //         sum += arr[i];
+    //
+    //     }
+    //
+    // }
+    //
+    // document.write("Tổng các phần tử chia hết cho 4 là: " + sum)
+    // document.write("<hr>");
+    // let count = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] % 4 === 0) {
+    //         count += 1
+    //
+    //     }
+    //
+    // }document.write("Số phần tử chia hết cho 4 là: " + count)
+    // document.write("<hr>");
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] % 4 === 0){
+    //         sum += arr[i];
+    //         count += 1;
+    //     }
+    //         }document.write("Trung bình của các phần tử chia hết cho 4 là " + (sum/count))
+    // document.write("<hr>");
+
+
+</script>
+</body>
+</html>
