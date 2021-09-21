@@ -9,17 +9,28 @@
 Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng
 (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)-->
 <script>
-    let arr = [9, 6, -3, -1, 15, -4, 16, -12, 19, 10];
-    let v = parseInt(prompt("Nhập số nguyên V: "));
-    let index = 0;
+
+    let arr = [];
+    while (arr.length < 10) {
+        let inp = prompt(('Nhập vào: '));
+        arr.push(inp);
+    }
+    let v = prompt("Nhập số nguyên V: ");
     for (let i = 0; i < arr.length; i++) {
-        if (v === arr[i]) {
-            arr.splice(i, 1)
+        let index = -1;
+        if (v == arr[i]) {
+            index = i;
+        }
+        if (index != -1) {
+            for (let j = index; j < arr.length; j++) {
+                arr[j] = arr[j + 1];
+            }
+            arr[arr.length - 1] = 0
+            i--;
         }
     }
-    arr[arr.length - 1] = 0
-    document.write(arr)
 
+    document.write(arr)
 
 </script>
 </body>
