@@ -18,15 +18,18 @@
 
     function trans() {
         let input = document.getElementById("en").value;
-        let EN = ["hello","bye","spring","love","dog", "cat"];
-        let VI = ["Xin chào","Tạm biệt","Mùa xuân","Yêu","chó", "mèo"];
+        let EN = ["hello", "bye", "spring", "love", "dog", "cat"];
+        let VI = ["Xin chào", "Tạm biệt", "Mùa xuân", "Yêu", "chó", "mèo"];
+        let check = true;
         for (let i = 0; i < EN.length; i++) {
             if (input === EN[i]) {
-                res.innerHTML =EN[i] + " là " + VI[i]
-                break;
-            } else {
-                res.innerHTML = 'no data'
+                res.innerHTML = EN[i] + " là " + VI[i]
+                check = false
+                break
             }
+        }
+        if (check === true) {
+            res.innerHTML = "no data"
         }
     }
 </script>
