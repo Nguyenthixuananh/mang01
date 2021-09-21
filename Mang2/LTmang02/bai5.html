@@ -7,9 +7,25 @@
 <body>
 <!-- Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.-->
 <script>
-    let a = "chó; mèo; lợn; gà";
-    let b = "chó; mèo; lợn; gà";
-    alert(a == b);
+    let a = "abcd"
+    let b = "abcde";
+
+    let check = true;
+    if (a.length != b.length) {
+        check = false;
+    }
+    else  {
+        for (let i=0; i<a.length; i++) {
+            if (a[i] != b[i]) {
+                check= false
+            }
+        }
+    }
+    if (check) {
+        alert("2 chuỗi giống nhau");
+    } else {
+        alert("2 chuỗi khác nhau")
+    }
 </script>
 </body>
 </html>
